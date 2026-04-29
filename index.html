@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wild Gunman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  
+  <section class="game-menu" id="gameMenu">
+    <h1 class="game-menu__title">Wild<br>Gunman</h1>
+    <button class="button button-start-game" id="btnStart">Start Game</button>
+  </section>
+
+  
+  <div class="wrapper" id="wrapper">
+
+    <section class="game-panels" id="gamePanels">
+      <div class="players-panel">
+        <div class="players-panel__you">You</div>
+        <div class="players-panel__gunman">Gunman</div>
+      </div>
+      <div class="white-line"></div>
+      <div class="time-panel">
+        <div class="time-panel__you" id="timeYou">0.00</div>
+        <div class="time-panel__gunman" id="timeGunman">0.00</div>
+      </div>
+      <div class="score-panel">
+        <div class="score-panel__score">$ <span class="score-panel__score_num" id="scoreNum">0</span><br><small>REWARD</small></div>
+        <div class="score-panel__level" id="levelLabel">Level 1</div>
+      </div>
+    </section>
+
+    <div class="message" id="message"></div>
+
+    <section class="game-screen" id="gameScreen">
+      <div class="gunman gunman-level-1" id="gunman"></div>
+      <button class="button button-restart" id="btnRestart">Restart</button>
+      <button class="button button-next-level" id="btnNextLevel">Next Level</button>
+    </section>
+
+  </div>
+
+  
+  <section class="win-screen" id="winScreen">
+    <h2 class="win-screen__title">YOU WON!<br><span id="finalScore"></span></h2>
+    <button class="button button-restart" id="btnPlayAgain" style="display:block;position:relative;top:auto;left:auto;transform:none;margin:30px auto 0;">Play Again</button>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
